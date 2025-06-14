@@ -1,35 +1,71 @@
 
-.home {
-    text-align: center;
-    padding: 3em 1em;
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #222;
 }
 
-.logo {
-    max-width: 180px;
-    margin-bottom: 1em;
-}
-
-.tagline {
-    font-size: 1.1em;
-    color: #555;
-    margin-bottom: 0.5em;
-}
-
-.subtitle {
-    font-size: 1.3em;
+a {
+    text-decoration: none;
     color: #2e4637;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+section {
+    padding: 2em 1em;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
     margin-bottom: 2em;
+    font-size: 2em;
+}
+
+.mission-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.mission-text {
+    flex: 1 1 300px;
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+@media (max-width: 768px) {
+    .mission-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission-text {
+        text-align: center;
+    }
 }
 
 .button {
     display: inline-block;
     background-color: #2e4637;
     color: #fff;
-    padding: 0.7em 1.4em;
+    padding: 0.6em 1.2em;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 6px;
+    margin-top: 2em;
     font-weight: bold;
-    transition: background 0.3s ease;
 }
 
 .button:hover {
