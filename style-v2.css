@@ -1,0 +1,92 @@
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #222;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #2e4637;
+}
+
+img.logo {
+    max-width: 240px;
+    width: 100%;
+    height: auto;
+    margin: 2em auto 1em;
+    display: block;
+}
+
+img.main-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+}
+
+section {
+    padding: 1em;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+.mission-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.mission-text {
+    flex: 1 1 300px;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    text-align: left;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    body {
+        text-align: center;
+    }
+
+    .mission-content {
+        flex-direction: column;
+    }
+
+    .mission-text {
+        text-align: center;
+    }
+
+    img.main-image {
+        max-width: 100%;
+    }
+}
+
+.button {
+    display: inline-block;
+    background-color: #2e4637;
+    color: #fff;
+    padding: 0.6em 1.2em;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 2em;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #3f5d4a;
+}
