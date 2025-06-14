@@ -21,7 +21,8 @@ img.logo {
 }
 
 img.main-image {
-    max-width: 100%;
+    max-width: 400px;
+    width: 100%;
     height: auto;
     border-radius: 10px;
     margin: 0 auto;
@@ -45,21 +46,16 @@ h1 {
     justify-content: center;
     gap: 2em;
     flex-wrap: wrap;
-    margin-top: 2em;
-}
-
-.mission-image {
-    flex: 0 1 40%;
-    max-width: 400px;
 }
 
 .mission-text {
-    flex: 0 1 50%;
+    flex: 1 1 300px;
     font-size: 1.1em;
     line-height: 1.6em;
     text-align: left;
 }
 
+/* Responsive styles */
 @media (max-width: 768px) {
     body {
         text-align: center;
@@ -71,11 +67,6 @@ h1 {
 
     .mission-text {
         text-align: center;
-        padding: 0 1em;
-    }
-
-    .mission-image {
-        max-width: 90%;
     }
 }
 
